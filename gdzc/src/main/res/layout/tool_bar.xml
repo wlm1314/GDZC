@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="appbar" type="com.gdzc.moudle.base.AppBar"/>
+    </data>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:naviCommand="@{appbar.leftCommon}"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title=" "
+                app:toolbar_navigationIcon="@{appbar.navigation}">
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@{appbar.title}"/>
+
+                <TextView
+                    style="@style/text_title"
+                    tools:text="确定"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:text="@{appbar.rightText}"
+                    app:clickCommand="@{appbar.rightCommon}"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <View style="@style/line_h"/>
+    </LinearLayout>
+</layout>

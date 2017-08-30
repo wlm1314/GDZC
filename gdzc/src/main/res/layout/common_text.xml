@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/cell">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_normal"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_hint"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        style="@style/text_sub"
+        android:layout_gravity="center"
+        android:textColor="@color/text_normal"/>
+
+</LinearLayout>

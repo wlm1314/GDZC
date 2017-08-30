@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="cell_view">
+
+        <attr name="cover" format="boolean" />
+
+        <attr name="contentLayout" format="reference" />
+
+        <attr name="iconLeft" format="reference" />
+        <attr name="iconTop" format="reference" />
+        <attr name="iconRight" format="reference" />
+        <attr name="iconBottom" format="reference" />
+
+        <attr name="labelText" format="reference|string" />
+        <attr name="infoText" format="reference|string" />
+        <attr name="subText" format="reference|string" />
+        <attr name="flagText" format="reference|string" />
+
+        <attr name="labelHint" format="reference|string" />
+        <attr name="infoHint" format="reference|string" />
+        <attr name="subHint" format="reference|string" />
+        <!-- tagView不应该有Hint(内容未空的时候不显示) -->
+
+        <attr name="labelColor" format="reference|color" />
+        <attr name="infoColor" format="reference|color" />
+        <attr name="subColor" format="reference|color" />
+        <attr name="flagColor" format="reference|color" />
+
+        <attr name="labelId" format="reference" />
+        <attr name="infoId" format="reference" />
+        <attr name="subId" format="reference" />
+        <attr name="flagId" format="reference" />
+        <attr name="tipId" format="reference" />
+        <attr name="iconLeftId" format="reference" />
+        <attr name="iconTopId" format="reference" />
+        <attr name="iconRightId" format="reference" />
+        <attr name="iconBottomId" format="reference" />
+
+    </declare-styleable>
+
+    <item name="label_view" type="id"/>
+    <item name="info_view" type="id"/>
+    <item name="sub_view" type="id"/>
+    <item name="flag_view" type="id"/>
+    <item name="tip_view" type="id"/>
+
+    <item name="left_icon" type="id"/>
+    <item name="top_icon" type="id"/>
+    <item name="right_icon" type="id"/>
+    <item name="bottom_icon" type="id"/>
+
+    <dimen name="def_icon">18dp</dimen>
+</resources>

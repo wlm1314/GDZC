@@ -1,0 +1,118 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="BaseTheme"/>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="line_h">
+        <item name="android:background">@color/line_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <style name="line_w">
+        <item name="android:background">@color/line_border</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="text_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <style name="text_title" parent="text_base">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="text_bigger" parent="text_base">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <style name="text_small" parent="text_base">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <style name="text_normal" parent="text_base">
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <style name="text_sub" parent="text_small">
+        <item name="android:textColor">@color/text_sub</item>
+    </style>
+
+    <style name="text_org" parent="text_small">
+        <item name="android:textColor">@color/text_org</item>
+    </style>
+
+    <style name="edit_normal" parent="text_normal">
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="edit_bigger" parent="text_bigger">
+        <item name="android:lines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_6</item>
+        <item name="android:paddingBottom">@dimen/dimen_6</item>
+    </style>
+
+    <style name="rbt_base">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_9</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="cell_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cell_text" parent="cell_base">
+        <item name="contentLayout">@layout/common_text</item>
+        <item name="labelId">@id/tv_title</item>
+        <item name="infoId">@id/tv_subtitle</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="cell_text_right" parent="cell_base">
+        <item name="contentLayout">@layout/common_text_right</item>
+        <item name="labelId">@id/tv_title</item>
+        <item name="infoId">@id/tv_subtitle</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="cell_text_height" parent="cell_text">
+        <item name="android:layout_height">@dimen/dimen_30</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+</resources>

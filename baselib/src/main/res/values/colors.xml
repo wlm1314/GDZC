@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="clear">@android:color/transparent</color>
+    <color name="app_bg">#f3f4f5</color><!--界面背景-->
+
+</resources>
